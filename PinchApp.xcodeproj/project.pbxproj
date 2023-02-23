@@ -56,7 +56,6 @@
 				968BF48E29A78A65003E6A29 /* View */,
 				968BF48D29A78A5A003E6A29 /* Screen */,
 				9617040F29A4E6E700666167 /* PinchAppApp.swift */,
-				9617041129A4E6E700666167 /* ContentView.swift */,
 				9617041329A4E6EA00666167 /* Assets.xcassets */,
 				9617041529A4E6EA00666167 /* Preview Content */,
 			);
@@ -74,6 +73,7 @@
 		968BF48D29A78A5A003E6A29 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9617041129A4E6E700666167 /* ContentView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
