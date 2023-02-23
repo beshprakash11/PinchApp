@@ -45,6 +45,7 @@ struct InfoPanelView: View {
             .backgroundStyle(.ultraThinMaterial)
             .cornerRadius(8)
             .frame(maxWidth: 420)
+            .opacity(isInfoPanelIsVisible ? 1 : 0)
             Spacer()
         }//Outer HS
     }
