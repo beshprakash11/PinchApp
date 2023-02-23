@@ -51,6 +51,10 @@
 		9617040E29A4E6E700666167 /* PinchApp */ = {
 			isa = PBXGroup;
 			children = (
+				968BF49029A78A78003E6A29 /* Data */,
+				968BF48F29A78A70003E6A29 /* Model */,
+				968BF48E29A78A65003E6A29 /* View */,
+				968BF48D29A78A5A003E6A29 /* Screen */,
 				9617040F29A4E6E700666167 /* PinchAppApp.swift */,
 				9617041129A4E6E700666167 /* ContentView.swift */,
 				9617041329A4E6EA00666167 /* Assets.xcassets */,
@@ -65,6 +69,34 @@
 				9617041629A4E6EA00666167 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		968BF48D29A78A5A003E6A29 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		968BF48E29A78A65003E6A29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		968BF48F29A78A70003E6A29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		968BF49029A78A78003E6A29 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
