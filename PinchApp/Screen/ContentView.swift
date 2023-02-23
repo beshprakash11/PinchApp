@@ -11,7 +11,9 @@ struct ContentView: View {
     //MARK: - PROPERTY
     @State private var isAnimating: Bool = false
     @State private var imageScale: CGFloat = 1
-    @State private var imageOffset: CGSize = .zero //CGSize(width: 0, height: 0)
+    @State private var imageOffset: CGSize = .zero
+    
+    
     //MARK: - FUNCTION
     func resetImageState(){
         return withAnimation(.spring()){
