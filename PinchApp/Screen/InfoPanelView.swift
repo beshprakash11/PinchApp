@@ -11,7 +11,7 @@ struct InfoPanelView: View {
     var scale: CGFloat
     var offset: CGSize
     
-    
+    @State private var isInfoPanelIsVisible: Bool = false
     var body: some View {
         HStack{
             //MARK: - HOTSPOT
@@ -19,6 +19,9 @@ struct InfoPanelView: View {
                 .symbolRenderingMode(.hierarchical)
                 .resizable()
                 .frame(width: 30, height: 30)
+                .onLongPressGesture(minimumDuration: 1){
+                    isInfoPanelIsVisible.toggle()
+                }
             Spacer()
             //MARK: INFO PANEL
             HStack(spacing: 2) {
@@ -36,14 +39,14 @@ struct InfoPanelView: View {
                 Text("\(offset.height)")
                 
                 Spacer()
-            }
+            }//HS Info panel
             .font(.footnote)
             .padding(8)
             .backgroundStyle(.ultraThinMaterial)
             .cornerRadius(8)
             .frame(maxWidth: 420)
             Spacer()
-        }
+        }//Outer HS
     }
 }
 
