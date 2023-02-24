@@ -88,8 +88,7 @@ struct ContentView: View {
                         Button(action: {
                             
                         }, label: {
-                            Image(systemName: "minus.magnifyingglass")
-                                .font(.system(size: 36))
+                            ControlImageView(icon: "minus.magnifyingglass")
                         })
                         //RESET
                         
