@@ -177,6 +177,10 @@ struct ContentView: View {
                             .shadow(radius: 4)
                             .opacity(isDrawerOpen ? 1 : 0)
                             .animation(.easeOut(duration: 0.5), value: isDrawerOpen)
+                            .onTapGesture(perform: {
+                                isAnimating = true
+                                pageIndex = page.id
+                            })
                     }
                     Spacer()
                     
