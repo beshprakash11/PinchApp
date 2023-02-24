@@ -83,7 +83,18 @@ struct ContentView: View {
             //MARK: - CONTROLS
             .overlay(
                 Group{
-                    
+                    HStack{
+                        //SCAL DOWN
+                        Button(action: {
+                            
+                        }, label: {
+                            Image(systemName: "minus.magnifyingglass")
+                                .font(.system(size: 36))
+                        })
+                        //RESET
+                        
+                        //SCALE UP
+                    }//:CONTROLS
                 }
                     .padding(.bottom, 30)
                 , alignment: .bottom
