@@ -156,8 +156,17 @@ struct ContentView: View {
                         .padding(8)
                         .foregroundStyle(.secondary)
                     //MARK: - THUMBNAILS
+                    Spacer()
+                    
                     
                 }//:Drawer
+                    .padding(EdgeInsets(top: 16, leading: 8, bottom: 24, trailing: 8))
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(12)
+                    .opacity(isAnimating ?  1: 0)
+                    .frame(width: 260)
+                    .padding(.top, UIScreen.main.bounds.height / 12)
+                , alignment: .topTrailing
             )
         }//:NAVIGATION
         .navigationViewStyle(.stack)
