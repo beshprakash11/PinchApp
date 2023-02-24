@@ -69,11 +69,16 @@ struct ContentView: View {
                                         imageScale = value
                                     }else if imageScale > 5{
                                         imageScale = 5
-                                    }else{
-                                        
                                     }
                                 }
                                 
+                            }
+                            .onEnded{_ in
+                                if imageScale > 5{
+                                    imageScale = 5
+                                }else if imageScale <= 1{
+                                    resetImageState()
+                                }
                             }
                     )
                 
