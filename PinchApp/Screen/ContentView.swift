@@ -30,7 +30,7 @@ struct ContentView: View {
             ZStack{
                 Color.clear
                 //MARK: PAGE IMAGE
-                Image(pages[pageIndex].imageName)
+                Image(pages[pageIndex - 1].imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(10)
