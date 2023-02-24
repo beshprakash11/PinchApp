@@ -80,7 +80,15 @@ struct ContentView: View {
                 ,
                 alignment: .top
             )
-        }
+            //MARK: - CONTROLS
+            .overlay(
+                Group{
+                    
+                }
+                    .padding(.bottom, 30)
+                , alignment: .bottom
+            )
+        }//:NAVIGATION
         .navigationViewStyle(.stack)
     }
 }
