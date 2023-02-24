@@ -145,6 +145,15 @@ struct ContentView: View {
                     .padding(.bottom, 30)
                 , alignment: .bottom
             )
+            //MARK: - DRAWER
+            .overlay(
+                HStack(spacing: 12){
+                    //MARK: DRAWER HANDLE
+                    
+                    //MARK: - THUMBNAILS
+                    
+                }//:Drawer
+            )
         }//:NAVIGATION
         .navigationViewStyle(.stack)
     }
