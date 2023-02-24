@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var isAnimating: Bool = false
     @State private var imageScale: CGFloat = 1
     @State private var imageOffset: CGSize = .zero
+    @State private var isDrawerOpen: Bool = false
     
     
     //MARK: - FUNCTION
@@ -166,6 +167,7 @@ struct ContentView: View {
                     .opacity(isAnimating ?  1: 0)
                     .frame(width: 260)
                     .padding(.top, UIScreen.main.bounds.height / 12)
+                    .offset(x: isDrawerOpen ? 20: 215)
                 , alignment: .topTrailing
             )
         }//:NAVIGATION
