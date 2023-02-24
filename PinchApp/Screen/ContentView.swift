@@ -170,6 +170,11 @@ struct ContentView: View {
                     //MARK: - THUMBNAILS
                     ForEach(pages) { page in
                         Image(page.imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80)
+                            .cornerRadius(8)
+                            .shadow(radius: 4)
                     }
                     Spacer()
                     
