@@ -24,6 +24,10 @@ struct ContentView: View {
             imageOffset = .zero
         }
     }
+    
+    func currentPage() -> String{
+        return pages[pageIndex - 1].imageName
+    }
     //MARK: - CONTENT
     var body: some View {
         NavigationView{
