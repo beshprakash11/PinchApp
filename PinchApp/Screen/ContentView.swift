@@ -97,6 +97,11 @@ struct ContentView: View {
                             ControlImageView(icon: "arrow.up.left.and.down.right.magnifyingglass")
                         })
                         //SCALE UP
+                        Button(action: {
+                            
+                        }, label: {
+                            ControlImageView(icon: "plus.magnifyingglass")
+                        })
                     }//:CONTROLS
                 }
                     .padding(.bottom, 30)
