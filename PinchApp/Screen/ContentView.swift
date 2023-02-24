@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var imageOffset: CGSize = .zero
     @State private var isDrawerOpen: Bool = false
     
+    let pages: [Page] = pagesData
+    @State private var pageIndex: Int = 1
     
     //MARK: - FUNCTION
     func resetImageState(){
@@ -28,7 +30,7 @@ struct ContentView: View {
             ZStack{
                 Color.clear
                 //MARK: PAGE IMAGE
-                Image("magazine-front-cover")
+                Image(pages[pageIndex].imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(10)
