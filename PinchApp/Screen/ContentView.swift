@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var isAnimating: Bool = false
     @State private var imageScale: CGFloat = 1
     @State private var imageOffset: CGSize = .zero
-    @State private var isDrawerOpen: Bool = false
+    @State private var isDrawerOpen: Bool = true
     
     let pages: [Page] = pagesData
     @State private var pageIndex: Int = 1
@@ -168,6 +168,9 @@ struct ContentView: View {
                             }
                         })
                     //MARK: - THUMBNAILS
+                    ForEach(pages) { page in
+                        Image(page.imageName)
+                    }
                     Spacer()
                     
                     
