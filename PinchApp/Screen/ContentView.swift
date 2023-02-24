@@ -103,6 +103,14 @@ struct ContentView: View {
                         })
                         //SCALE UP
                         Button(action: {
+                            withAnimation(.spring()){
+                                if imageScale < 5{
+                                    imageScale += 1
+                                    if imageScale > 5 {
+                                        imageScale = 5
+                                    }
+                                }
+                            }
                             
                         }, label: {
                             ControlImageView(icon: "plus.magnifyingglass")
