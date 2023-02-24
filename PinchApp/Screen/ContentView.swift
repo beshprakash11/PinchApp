@@ -149,7 +149,12 @@ struct ContentView: View {
             .overlay(
                 HStack(spacing: 12){
                     //MARK: DRAWER HANDLE
-                    
+                    Image(systemName: "chevron.compact.left")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 40)
+                        .padding(8)
+                        .foregroundStyle(.secondary)
                     //MARK: - THUMBNAILS
                     
                 }//:Drawer
