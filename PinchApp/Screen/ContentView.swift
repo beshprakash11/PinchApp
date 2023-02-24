@@ -86,7 +86,12 @@ struct ContentView: View {
                     HStack{
                         //SCAL DOWN
                         Button(action: {
-                            
+                            if imageScale > 1{
+                                imageScale -= 1
+                                if imageScale <= 1{
+                                    resetImageState()
+                                }
+                            }
                         }, label: {
                             ControlImageView(icon: "minus.magnifyingglass")
                         })
