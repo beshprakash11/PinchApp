@@ -60,6 +60,10 @@ struct ContentView: View {
                                 }
                             }
                     )
+                //MARK: - 3. MAGNIFICATION
+                    .gesture(
+                        MagnificationGesture()
+                    )
                 
                 
             }
