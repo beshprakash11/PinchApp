@@ -156,6 +156,11 @@ struct ContentView: View {
                         .frame(height: 40)
                         .padding(8)
                         .foregroundStyle(.secondary)
+                        .onTapGesture(perform: {
+                            withAnimation(.easeOut){
+                                isDrawerOpen.toggle()
+                            }
+                        })
                     //MARK: - THUMBNAILS
                     Spacer()
                     
