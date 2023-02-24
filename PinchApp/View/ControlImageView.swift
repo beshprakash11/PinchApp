@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ControlImageView: View {
+    let icon: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(systemName: icon)
+            .font(.system(size: 36))
     }
 }
 
 struct ControlImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlImageView()
+        ControlImageView(icon: "minus.magnifyinglass")
             .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
             .padding()
